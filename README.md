@@ -28,13 +28,13 @@ The controller then uses these interfaces to pass data to the views.
 
 In this application, StuffServiceSingle is of the Singleton type and supports the actions: Single_0 (only reads fields), Single_1, Single_2 (sets fields). The example shows two browsers: Chrome via Single_1 sets the data. Firefox via Single_0 reads data from the instance set by Chrome and sees the class state set by Chrome because a class created in Singleton mode has only one instance in the web application. 
 
-![](/Jpg/Singleton_2.png)
+![](/jpg/Singleton_2.png)
 
 ## Transient 
 
 In this application, StuffService is of type Transient and supports the actions: Stuff0 (only reads fields), Stuff1, Stuff 2 (sets fields). In Transient mode, each request initializes its own class, so browsers only see their class instances.
 
-![](/Jpg/Transient_2.png)
+![](/jpg/Transient_2.png)
 
 ## Details
 
