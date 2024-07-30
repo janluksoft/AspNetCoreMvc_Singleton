@@ -1,0 +1,36 @@
+﻿@model PMvcMyLay73.Models.Stuff
+
+@{
+    ViewData["Title"] = "Class TRANSIENT";
+    Layout = "_LayoutMVC";
+}
+
+<div class="text-center">
+
+    <h1>@ViewData["Title"]</h1>
+
+    <div>This is a page for testing a class created as a <b>Transient</b></div>
+    <div>Each request initializes a class</div>
+    <div>Press Stuff0(only show), Stuff1, Stuff2</div>
+    <br />
+
+    <table border="1">
+        <tbody style="background-color:gray">
+        <td>Name</td>
+        <td>Value</td>
+        </tbody>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.Id)</td>
+            <td>@Html.DisplayFor(model => model.Id)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.Name)</td>
+            <td>@Html.DisplayFor(model => model.Name)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.Symbol)</td>
+            <td>@Html.DisplayFor(model => model.Symbol)</td>
+        </tr>
+    </table>
+
+</div>

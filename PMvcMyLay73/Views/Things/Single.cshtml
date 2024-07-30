@@ -1,0 +1,36 @@
+﻿@model PMvcMyLay73.Models.Stuff
+
+@{
+    ViewData["Title"] = "Class SINGLETON";
+    Layout = "_LayoutMVC";
+}
+
+<div class="text-center">
+
+    <h1>@ViewData["Title"]</h1>
+
+    <div>This is a page for testing a class created as a <b>Singleton</b></div>
+    <div>The application creates only one instance of the class (singleton)</div>
+    <div>Press Single_0 (only show), Single_1, Single_2</div>
+    <br />
+
+    <table border="1" cellpadding="4" cellspacing="2">
+        <tbody style="background-color:gray">
+        <td>Name</td>
+        <td>Value</td>
+        </tbody>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.Id)</td>
+            <td>@Html.DisplayFor(model => model.Id)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.Name)</td>
+            <td>@Html.DisplayFor(model => model.Name)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.Symbol)</td>
+            <td>@Html.DisplayFor(model => model.Symbol)</td>
+        </tr>
+    </table>
+
+</div>
